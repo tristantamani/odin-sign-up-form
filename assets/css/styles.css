@@ -20,4 +20,40 @@ body {
     background-image: url('/assets/images/hugues-de-buyer-mimeure-lQPEChtLjUo-unsplash.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    margin-top: 160px;
+}
+
+.logo {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 20%;
+}
+
+.logo-name {
+    font-family: "Norse", sans-serif;
+    font-size: 6rem;
+    color: #fff;
+    margin: 40px 0;
+}
+
+.form-container {
+    background-color: #fff;
+    width: 60vw;
+    height: 100vh;
 }
