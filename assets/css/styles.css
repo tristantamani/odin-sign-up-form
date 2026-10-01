@@ -23,7 +23,29 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+}
+
+label {
     font-size: 0.8rem;
+}
+
+input {
+    width: 250px;
+    margin: 4px 0 16px;
+    padding: 4px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #faa585;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 48px;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
 }
 
 .container {
@@ -76,7 +98,51 @@ body {
 }
 
 .form-container {
-    background-color: #fff;
+    background-color: #f9fafb;
     width: 65vw;
-    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-top,
+.form-middle,
+.form-bottom {
+    padding-left: 48px;
+}
+
+.form-top {
+    font-size: 0.6rem;
+    padding-right: 200px;
+    & > h1:nth-child(1) {
+        padding-bottom: 24px;
+    }
+}
+
+.form-middle {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
+    margin: 24px 0;
+    padding-bottom: 24px;
+}
+
+.form-middle h1 {
+    padding: 8px 0;
+    font-size: 1.2rem;
+}
+
+.form-column {
+    display: flex;
+    gap: 64px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-bottom p {
+    font-size: 0.9rem;
+    padding: 12px 0;
 }
