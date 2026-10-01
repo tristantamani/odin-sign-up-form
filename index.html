@@ -41,40 +41,40 @@
                 <h1>You <em>know</em> you want to.</h1>
             </div>
 
+            <form action="" method="post">
+                <div class="form-middle">
 
-            <div class="form-middle">
-                <form action="" method="post">
                     <h1>Let's do this!</h1>
                     <div class="form-column">
                         <div class="left">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name" />
+                            <input type="text" name="first-name" id="first-name" placeholder="Thor" required />
 
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" required />
 
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" />
+                            <input type="password" name="password" id="password" required />
                         </div>
 
                         <div class="right">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name" />
+                            <input type="text" name="last-name" id="last-name" placeholder="Odinson" required />
 
                             <label for="phone-number">PHONE NUMBER</label>
                             <input type="text" name="phone-number" id="phone-number" inputmode="numeric" />
 
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-password" />
+                            <input type="password" name="confirm-password" id="confirm-password" required />
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
 
-            <div class="form-bottom">
-                <button>Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
-            </div>
+                <div class="form-bottom">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
         </div>
     </div>
 </body>

@@ -37,6 +37,16 @@ input {
     border-radius: 4px;
 }
 
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
+}
+
+input[type="password"]:user-invalid,
+input[type="password"]:not(:focus) {
+    border: 1px solid red;
+}
+
 button {
     background-color: #faa585;
     color: #fff;
@@ -145,4 +155,10 @@ button {
 .form-bottom p {
     font-size: 0.9rem;
     padding: 12px 0;
+
+    & > a {
+        text-decoration: none;
+        color: #faa585;
+        font-weight: 800;
+    }
 }
