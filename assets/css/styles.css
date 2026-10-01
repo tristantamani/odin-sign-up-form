@@ -55,6 +55,7 @@ button {
     border: none;
     border-radius: 8px;
     padding: 12px 48px;
+    margin-top: 16px;
     box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
 }
 
@@ -124,7 +125,8 @@ button {
 .form-top {
     font-size: 0.6rem;
     padding-right: 200px;
-    & > h1:nth-child(1) {
+
+    &>h1:nth-child(1) {
         padding-bottom: 24px;
     }
 }
@@ -134,29 +136,34 @@ button {
     box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
     margin: 24px 0;
     padding-bottom: 24px;
-}
 
-.form-middle h1 {
-    padding: 8px 0;
-    font-size: 1.2rem;
+    &>h1 {
+        padding: 16px 0 8px;
+        font-size: 1.2rem;
+    }
 }
 
 .form-column {
     display: flex;
-    gap: 64px;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.left,
-.right {
+.form-row {
     display: flex;
-    flex-direction: column;
+    gap: 64px;
+
+    & .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .form-bottom p {
     font-size: 0.9rem;
-    padding: 12px 0;
+    padding: 16px 0;
 
-    & > a {
+    &>a {
         text-decoration: none;
         color: #faa585;
         font-weight: 800;
